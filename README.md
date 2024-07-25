@@ -85,7 +85,7 @@ Follow these detailed steps to install and set up Maven:
 Navigate to your project directory:
 
 ```bash
-cd <project-directory>
+cd <project-directory>/complete
 ```
 
 Clean and package the application to generate a JAR file:
