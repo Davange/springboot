@@ -1,6 +1,3 @@
-Here's a Markdown file (`README.md`) that outlines the detailed steps for hosting a Java Spring Boot application on Amazon EC2:
-
-```markdown
 # Hosting a Java Spring Boot Application on Amazon EC2
 
 ## 1. Prepare Your Application
