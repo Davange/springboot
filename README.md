@@ -12,7 +12,73 @@ git clone <repository-url>
 
 ### Install Maven
 
-Follow the Maven installation instructions from the [Maven documentation](https://maven.apache.org/install.html).
+Follow these detailed steps to install and set up Maven:
+
+1. **Download Maven**
+
+   Download the Maven binary archive from the [Apache Maven website](https://maven.apache.org/download.cgi). Choose the `.zip` or `.tar.gz` file, depending on your preference.
+
+   Example for `.tar.gz`:
+
+   ```bash
+   wget https://archive.apache.org/dist/maven/maven-3/3.9.8/binaries/apache-maven-3.9.8-bin.tar.gz
+   ```
+
+2. **Extract the Archive**
+
+   Extract the downloaded archive:
+
+   ```bash
+   tar xzvf apache-maven-3.9.8-bin.tar.gz
+   ```
+
+   This will create a directory named `apache-maven-3.9.8`.
+
+3. **Move Maven to `/opt` (Optional)**
+
+   For system-wide availability, you can move Maven to `/opt`:
+
+   ```bash
+   sudo mv apache-maven-3.9.8 /opt/
+   ```
+
+4. **Set Up Environment Variables**
+
+   Add Maven to your `PATH` environment variable. Open or create the `~/.bashrc` file:
+
+   ```bash
+   nano ~/.bashrc
+   ```
+
+   Add the following lines to the end of the file:
+
+   ```bash
+   # Maven environment variables
+   export M2_HOME=/opt/apache-maven-3.9.8
+   export PATH=$M2_HOME/bin:$PATH
+   ```
+
+   **Details**:
+   - `M2_HOME` points to the Maven installation directory.
+   - `PATH` includes the Maven `bin` directory to make the `mvn` command available globally.
+
+5. **Apply the Changes**
+
+   Load the updated `.bashrc` file:
+
+   ```bash
+   source ~/.bashrc
+   ```
+
+6. **Verify Maven Installation**
+
+   Confirm that Maven is installed and available:
+
+   ```bash
+   mvn -v
+   ```
+
+   The output should display Maven's version and other details.
 
 ### Build the Application
 
