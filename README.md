@@ -151,5 +151,3 @@ Open a web browser and navigate to `http://<ec2-public-ip>:8080` to access your 
 
 This documentation provides a comprehensive guide for setting up a Java Spring Boot application on an Amazon EC2 instance, including building the application, configuring the server, and ensuring the application runs persistently. Adjust paths and configurations as necessary based on your specific setup and requirements.
 ```
-
-You can save this content into a `README.md` file for your documentation.
