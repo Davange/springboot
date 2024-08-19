@@ -3,7 +3,7 @@ FROM maven:3.8.6-amazoncorretto-17 AS build
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the pom.xml and download the dependencies
+# Copy the pom.xml and download the dependencie
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
